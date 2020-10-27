@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="News" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/News" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01005AA1CC93259B41FEA2314387F025DA18" Name="NewsItem" Group="Custom Content Types" Description="News Block Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Name="LinkTitle" ReadOnly="TRUE" /><FieldRef ID="{329554b0-cb75-4223-85ea-8a7c1d9bd40b}" DisplayName="_Description" Required="FALSE" Name="_Description" /><FieldRef ID="{8b7ad9fa-6112-4265-911d-f9f73dd539f2}" DisplayName="_Date Publishing" Required="FALSE" Name="_DatePublishing" /><FieldRef ID="{4d2a59eb-68e6-4383-b3ed-3874d94d69b3}" DisplayName="_Is Visible" Required="FALSE" Name="_IsVisible" /><FieldRef ID="{bbc0dc41-23e2-4873-ac58-44f2b148c127}" DisplayName="_Assigned Person" Required="FALSE" Name="_AssignedPerson" /></FieldRefs></ContentType><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{329554b0-cb75-4223-85ea-8a7c1d9bd40b}" Name="_Description" DisplayName="_Description" Type="Note" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{8b7ad9fa-6112-4265-911d-f9f73dd539f2}" Name="_DatePublishing" DisplayName="_Date Publishing" Type="DateTime" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{4d2a59eb-68e6-4383-b3ed-3874d94d69b3}" Name="_IsVisible" DisplayName="_Is Visible" Type="Boolean" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{bbc0dc41-23e2-4873-ac58-44f2b148c127}" Name="_AssignedPerson" DisplayName="_Assigned Person" Type="User" Required="FALSE" Group="Custom Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="_Description" /><FieldRef Name="_DatePublishing" /><FieldRef Name="_IsVisible" /><FieldRef Name="_AssignedPerson" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

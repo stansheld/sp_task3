@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{bbc0dc41-23e2-4873-ac58-44f2b148c127}"
+       Name="_AssignedPerson"
+       DisplayName="_Assigned Person"
+       Type="User"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

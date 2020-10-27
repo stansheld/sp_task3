@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="270cfe93-c992-412f-bcbe-6b29d76b848a" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="sp_tba_v2.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="sp_tba_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=80f44fc73453b537" Namespace="sp_tba_v2.VisualWebPart1" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\sp_tba_v2\VisualWebPart1\VisualWebPart1UserControl.ascx" />
+    <TemplateFile Location="Images\vector60.png" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="sp_tba_v2_Tonkonog - News block\Feature.xml" />
+  </FeatureManifests>
+</Solution>

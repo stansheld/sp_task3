@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="My News Block Feature." Id="99e37f0f-cfb1-42c9-b6e7-6305c5c81731" ImageUrl="vector60.png" Scope="Site" Title="Tonkonog - News block">
+  <ElementManifests>
+    <ElementManifest Location="_AssignedPerson\Elements.xml" />
+    <ElementManifest Location="_DatePublishing\Elements.xml" />
+    <ElementManifest Location="_Description\Elements.xml" />
+    <ElementManifest Location="_IsVisible\Elements.xml" />
+    <ElementManifest Location="NewsItem\Elements.xml" />
+    <ElementManifest Location="NewsInstance\Elements.xml" />
+    <ElementManifest Location="News\Elements.xml" />
+    <ElementFile Location="News\Schema.xml" />
+    <ElementManifest Location="VisualWebPart1\Elements.xml" />
+    <ElementFile Location="VisualWebPart1\VisualWebPart1.webpart" />
+  </ElementManifests>
+</Feature>

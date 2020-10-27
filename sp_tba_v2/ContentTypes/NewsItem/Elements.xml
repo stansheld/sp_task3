@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01005AA1CC93259B41FEA2314387F025DA18" Name="NewsItem" Group="Custom Content Types" Description="News Block Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Name="LinkTitle" ReadOnly="TRUE" />
+      <FieldRef ID="{329554b0-cb75-4223-85ea-8a7c1d9bd40b}" DisplayName="_Description" Required="FALSE" Name="_Description" />
+      <FieldRef ID="{8b7ad9fa-6112-4265-911d-f9f73dd539f2}" DisplayName="_Date Publishing" Required="FALSE" Name="_DatePublishing" />
+      <FieldRef ID="{4d2a59eb-68e6-4383-b3ed-3874d94d69b3}" DisplayName="_Is Visible" Required="FALSE" Name="_IsVisible" />
+      <FieldRef ID="{bbc0dc41-23e2-4873-ac58-44f2b148c127}" DisplayName="_Assigned Person" Required="FALSE" Name="_AssignedPerson" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
